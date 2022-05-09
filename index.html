@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-step">
+        <div class="line"></div>
+        <div class="step1">STEP_1</div>
+        <div class="step2">STEP_2</div>
+        <div class="step3">STEP_3</div>
+      </div>
+
+      <div class="completed">
+        <h1>COMPLETED</h1>
+        <div class="check-true">
+          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+          <p>Chúc mừng bạn đã xác minh thành công!</p>
+        </div>
+        <div id="value"> </div>
+        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+      </div>
+
+      <form class="form-one">
+        <h1>TÊN TÀI KHOẢN</h1>
+        <input type="text" id="val-name" placeholder=" " required />
+        <label class="fake" for="val-name">Username</label>
+        <i class="fa fa-user-o" aria-hidden="true"></i>
+        <div class="error error-1">* Tên đăng nhập phải trên 8 kí tự...</div>
+        <a href="#"> Đăng kí tài khoản tại đây? </a>
+        <button type="button" id="next-one">NEXT</button>
+      </form>
+
+      <form class="form-two">
+        <h1>MẬT KHẨU</h1>
+        <input type="password" id="val-pass" placeholder=" " required />
+        <label class="fake" for="val-pass">Password</label>
+        <div class="error error-2">* Mật khẩu phải trên 8 kí tự...</div>
+        <a href="#"> Đăng kí tài khoản tại đây? </a>
+        <button type="button" id="back-one">BACK</button>
+        <button type="button" id="next-two">NEXT</button>
+      </form>
+
+      <form class="form-three">
+        <h1>THÔNG TIN LIÊN LẠC</h1>
+        <input type="email" id="val-email" placeholder=" " required />
+        <label class="fake" for="val-email">Email/Phone</label>
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <div class="error error-3">* Email bao gồm kí tự '@'...</div>
+        <a href="#"> Đăng kí tài khoản tại đây? </a>
+        <button type="button" id="back-two">BACK</button>
+        <button type="button" id="login" onclick="onClick(); return false;">
+          LOGIN
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
